@@ -15,6 +15,7 @@ describe('API E2E Test Suite', () => {
 
     const data = JSON.parse(response.text)
     expect(data).toBeInstanceOf(Array)
+    expect(data.length).toEqual(0)
   })
 
   test('POST /  - should save an item and return ok', async() => {
